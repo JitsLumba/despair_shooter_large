@@ -8,6 +8,7 @@ public class victoryuiobserver1 : MonoBehaviour
     [SerializeField] private victoryviewhandler viw;
     [SerializeField] private GameObject raycastui;
     [SerializeField] private defeat_script defeat_scripter;
+    [SerializeField] private int level_call_num;
     void Awake()
     {
 
@@ -53,7 +54,7 @@ public class victoryuiobserver1 : MonoBehaviour
                 if (check)
                 {
                     //Victory Screen
-                    nextlevelmanager.Instance.loadlevel(2);
+                    nextlevelmanager.Instance.loadlevel(level_call_num);
                     Debug.Log("Missy");
                     //viw.writeon(enemy, grade);
                     ViewHandler.Instance.Show(ViewNames.victory_ui1);

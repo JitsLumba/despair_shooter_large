@@ -5978,7 +5978,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 186
   endx: 222
   startz: -695
@@ -7023,7 +7023,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 186
   endx: 222
   startz: -695
@@ -13084,7 +13084,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 186
   endx: 222
   startz: -695
@@ -14928,7 +14928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 3
+  hp: 1
   posdoor: z
   startx: 225
   endx: 240
@@ -20952,7 +20952,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 186
   endx: 222
   startz: -695
@@ -30682,7 +30682,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 186
   endx: 222
   startz: -695
@@ -38551,7 +38551,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 186
   endx: 222
   startz: -695
@@ -39613,7 +39613,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 186
   endx: 222
   startz: -695
@@ -45800,7 +45800,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 186
   endx: 222
   startz: -695
@@ -46210,7 +46210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 3
+  hp: 1
   posdoor: z
   startx: 225
   endx: 240
@@ -46389,6 +46389,7 @@ MonoBehaviour:
   viw: {fileID: 7183003345195004801, guid: bded524f71bb81d498b6c1358aa477bf, type: 3}
   raycastui: {fileID: 1618512747}
   defeat_scripter: {fileID: 2109518197}
+  level_call_num: 2
 --- !u!4 &819585412
 Transform:
   m_ObjectHideFlags: 0
@@ -55704,7 +55705,7 @@ MonoBehaviour:
   navermeshspeed: 7
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 284
   endx: 330
   startz: -653
@@ -55849,7 +55850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 3
+  hp: 1
   posdoor: z
   startx: 225
   endx: 240
@@ -57579,7 +57580,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 186
   endx: 222
   startz: -695
@@ -59577,7 +59578,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 186
   endx: 222
   startz: -695
@@ -63400,7 +63401,7 @@ MonoBehaviour:
   navermeshspeed: 7
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 284
   endx: 330
   startz: -653
@@ -69393,7 +69394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 3
+  hp: 1
   posdoor: z
   startx: 225
   endx: 240
@@ -70170,7 +70171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 3
+  hp: 1
   posdoor: z
   startx: 225
   endx: 240
@@ -71971,7 +71972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 3
+  hp: 1
   posdoor: z
   startx: 225
   endx: 240
@@ -72751,7 +72752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 3
+  hp: 1
   posdoor: z
   startx: 225
   endx: 240
@@ -73450,7 +73451,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 186
   endx: 222
   startz: -695
@@ -73648,7 +73649,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 186
   endx: 222
   startz: -695
@@ -82045,7 +82046,7 @@ MonoBehaviour:
   navermeshspeed: 7
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 284
   endx: 330
   startz: -653
@@ -82406,7 +82407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 3
+  hp: 1
   posdoor: z
   startx: 225
   endx: 240
@@ -86529,7 +86530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 3
+  hp: 1
   posdoor: z
   startx: 225
   endx: 240
@@ -90936,7 +90937,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 186
   endx: 222
   startz: -695
@@ -100650,7 +100651,7 @@ MonoBehaviour:
   navermeshspeed: 7
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 284
   endx: 330
   startz: -653
@@ -102404,7 +102405,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 186
   endx: 222
   startz: -695
@@ -106675,7 +106676,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 186
   endx: 222
   startz: -695
@@ -110179,7 +110180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 3
+  hp: 1
   posdoor: z
   startx: 225
   endx: 240
@@ -113677,7 +113678,7 @@ MonoBehaviour:
   navermeshspeed: 7
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 3
+  hp: 1
   startx: 284
   endx: 330
   startz: -653

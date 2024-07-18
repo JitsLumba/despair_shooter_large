@@ -7,10 +7,11 @@ public class gamenotifier : MonoBehaviour
 {
     // Start is called before the first frame update
     private bool notpaused = true, cango = true;
-    private float hp = 1, maxhp = 10, hpratio = 1.0f;
+    private float hp = 10, maxhp = 10, hpratio = 1.0f;
     [SerializeField] string level;
     private int enemiesdestroyed = 0;
     [SerializeField] private int enemiesleft;
+    
     //[SerializeField] private Text txt;
     private string elecname = "Elec - ";
     private int electricbullet = 20;
