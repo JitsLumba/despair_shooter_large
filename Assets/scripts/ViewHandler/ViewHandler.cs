@@ -48,7 +48,10 @@ public class ViewHandler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//Debug.Log("HMMM " + isUIActionsPermitted);
+		
 		if(this.isUIActionsPermitted && Input.GetKeyDown(KeyCode.Escape)) {
+			
 			this.OnBack ();
 		}
 	}
@@ -72,7 +75,7 @@ public class ViewHandler : MonoBehaviour {
 	/// <param name="screenName">Screen name.</param>
 	/// <param name="unique">If set to <c>true</c>, create a new instance/duplicate view.</param>
 	public View Show(string screenName, bool unique = false) {
-
+		Debug.Log("IS THIS THE SHOW FUNCTION " + isUIActionsPermitted);
 		if(screenName == "") {
 			return null;
 		}
@@ -83,33 +86,39 @@ public class ViewHandler : MonoBehaviour {
 
 		View view;
 		if(this.IsViewExisting(screenName) && unique == false) {
+			
 			view = this.FindActiveView(screenName);
 			this.activeViews.Remove(view);
 			this.activeViews.Add(view);
 		}
 		else if(this.IsViewInPool(screenName) && unique == false) {
+			
 			view = this.FindViewInPool(screenName);
 			this.viewPool.Remove(view);
 			this.activeViews.Add(view);
 			
 		}
 		else {
+			//Initializes the designated ui view name
+			
 			view = this.InitializeView(screenName);
+			
 			this.activeViews.Add(view);
+			
 		}
-
+		
 		view.Show();
 		
 		if(view.IsRootScreen()) {
 			this.rootView = view;
 		}
-
+		
 		this.RearrangeOverlay();
-
+		
 		if(view.IsRootScreen() == false) {
 			
 		}
-
+		
 		return view;
 	}
 
@@ -125,11 +134,12 @@ public class ViewHandler : MonoBehaviour {
 		this.OnBack();
 	}
 
-	private void OnBack() {
+	public void OnBack() {
 
 		View activeView = this.GetActiveView();
 
 		if(activeView == null || activeView.IsCancelable() == false) {
+			
 			return;
 		}
 

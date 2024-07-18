@@ -197,6 +197,7 @@ public class ethanai : MonoBehaviour
             bool canbedmger = fpshealther.canbedmgedval();
             if (canbedmger)
             {
+                Debug.Log("HERE IS THE REDUCE DAMAGE");
                 fpshealther.reducehp();
                 gamenotif.reduceplayerhp();
                 sfx = GameObject.Instantiate(this.punchsound, soundloc.transform);

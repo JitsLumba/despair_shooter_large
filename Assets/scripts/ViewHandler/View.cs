@@ -29,7 +29,7 @@ public class View : MonoBehaviour {
 	}
 
 	public virtual void Show() {
-
+		
         this.gameObject.SetActive(true);
 
 		if(this.viewAnimation == null) {
@@ -42,7 +42,9 @@ public class View : MonoBehaviour {
 		this.AttachButtonSounds();
 		this.Reset();
 		this.OnShowStarted();
+		
 		this.viewAnimation.PerformEntrance();
+		
 	}
 
 	public virtual void Hide() {

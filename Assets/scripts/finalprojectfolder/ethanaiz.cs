@@ -219,6 +219,7 @@ public class ethanaiz : MonoBehaviour
             bool canbedmger = fpshealther.canbedmgedval();
             if (canbedmger)
             {
+                Debug.Log("OUCHIE");
                 fpshealther.reducehp();
                 gamenotif.reduceplayerhp();
                 sfx = GameObject.Instantiate(this.punchsound, soundloc.transform);

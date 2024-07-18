@@ -7,6 +7,7 @@ public class victoryuiobserver1 : MonoBehaviour
 {
     [SerializeField] private victoryviewhandler viw;
     [SerializeField] private GameObject raycastui;
+    [SerializeField] private defeat_script defeat_scripter;
     void Awake()
     {
 
@@ -29,18 +30,39 @@ public class victoryuiobserver1 : MonoBehaviour
     }
     void updateui(Parameters param)
     {
-        bool check = param.GetBoolExtra("win1", false);
-        string enemy = param.GetIntExtra("enemiesdestruct", -1) + "";
-        string grade = param.GetStringExtra("grader", "Z");
-        if (check)
-        {
-            nextlevelmanager.Instance.loadlevel(2);
-            Debug.Log("Missy");
-            //viw.writeon(enemy, grade);
-            ViewHandler.Instance.Show(ViewNames.victory_ui1);
+  
+        bool main_menu_confirm = param.GetBoolExtra("wants_to_main_menu", false);
+        bool quit_confirm  = param.GetBoolExtra("wants_to_quit", false);
+        
+        if (main_menu_confirm) {
+            nextlevelmanager.Instance.main_menu_return();
+        }
+        else if (quit_confirm) {
+            nextlevelmanager.Instance.close_game();
+        }
+        else {
+            bool check = param.GetBoolExtra("win1", false);
+            bool player_lost_confirm = param.GetBoolExtra("lose1", false);
+            string enemy = param.GetIntExtra("enemiesdestruct", -1) + "";
+            string grade = param.GetStringExtra("grader", "Z");
+            if (player_lost_confirm) {
+                //defeat screen
+                defeat_scripter.show_defeat_screen_sequence();
+            }
+            else {
+                if (check)
+                {
+                    //Victory Screen
+                    nextlevelmanager.Instance.loadlevel(2);
+                    Debug.Log("Missy");
+                    //viw.writeon(enemy, grade);
+                    ViewHandler.Instance.Show(ViewNames.victory_ui1);
 
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+                    Cursor.lockState = CursorLockMode.None;
+                }
+            }
+            
         }
     }
 }

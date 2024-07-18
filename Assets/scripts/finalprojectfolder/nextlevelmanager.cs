@@ -36,6 +36,14 @@ public class nextlevelmanager
         {
             SceneManager.LoadScene(lvl3);
         }
+
+    }
+    public void main_menu_return() {
+        SceneManager.LoadScene("despairshooterstartscreen");
+    }
+    public void close_game() {
+        Debug.Log("Closing game");
+        Application.Quit();
     }
     public void sane(int num)
     {

@@ -7,7 +7,7 @@ public class gamenotifier : MonoBehaviour
 {
     // Start is called before the first frame update
     private bool notpaused = true, cango = true;
-    private float hp = 10, maxhp = 10, hpratio = 1.0f;
+    private float hp = 1, maxhp = 10, hpratio = 1.0f;
     [SerializeField] string level;
     private int enemiesdestroyed = 0;
     [SerializeField] private int enemiesleft;
@@ -21,7 +21,8 @@ public class gamenotifier : MonoBehaviour
     private float rcolor = 0.0f, gcolor = 0.0f, bcolor = 1.0f, acolor = 1.0f;
     private bool won1 = false, lost1 = false, won2 = false, won3 = false, lost2 = false, lost3 = false;
     private string grade = "S";
-    
+    private bool wants_to_quit = false;
+    private bool wants_to_main_menu = false;
     void Start()
     {
         
@@ -103,6 +104,7 @@ public class gamenotifier : MonoBehaviour
     }
     public void reduceplayerhp()
     {
+        //FUNCTION THAT NOTIFIES THE PLAYER'S HP IS REDUCED
         hp = hp - 1;
         hpratio = hp / maxhp;
         if ((hp == 0 && enemiesleft == 0) || hp == 0)
@@ -125,6 +127,18 @@ public class gamenotifier : MonoBehaviour
         }
         updatetest();
     }
+    public void quit_game() {
+        wants_to_quit = true;
+        updatetest();
+    }
+    public void return_menu() {
+        wants_to_main_menu = true;
+        updatetest();
+    }
+    public void main_menu() {
+        wants_to_main_menu = true;
+        updatetest();
+    }
     void updatetest()
     {
         Parameters param = new Parameters();
@@ -143,6 +157,8 @@ public class gamenotifier : MonoBehaviour
         param.PutExtra("lose3", lost3);
         param.PutExtra("enemiesdestruct", enemiesdestroyed);
         param.PutExtra("grader", grade);
+        param.PutExtra("wants_to_quit", wants_to_quit);
+        param.PutExtra("wants_to_main_menu", wants_to_main_menu);
         EventBroadcaster.Instance.PostEvent(EventNames.ON_GAME_NOTIF, param);
     }
     IEnumerator pauseinterval()

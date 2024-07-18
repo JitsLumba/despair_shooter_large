@@ -93,7 +93,7 @@ public class DOViewAnimation : IViewAnimation {
 		}
 		
 		HOTween.To(this.rectTransform, HIDE_SPEED, parms);*/
-
+		
 		if (triggerOnComplete) {
 			this.rectTransform.DOLocalMove (Vector3.zero, HIDE_SPEED).SetEase(this.easeType).OnComplete (this.view.OnShowCompleted);
 		} else {
@@ -104,6 +104,7 @@ public class DOViewAnimation : IViewAnimation {
 	
 	protected virtual void ShowFromCenter(bool triggerOnComplete = true)
 	{
+		
 		this.rectTransform.anchoredPosition3D = Vector3.zero;
 		this.rectTransform.localScale = Vector3.zero;
 		
@@ -127,6 +128,7 @@ public class DOViewAnimation : IViewAnimation {
 	
 	protected virtual void ShowFromBottom(bool triggerOnComplete = true)
 	{
+		
 		this.rectTransform.anchoredPosition3D = new Vector3(0.0f, -POSITION_OFFSET, 0.0f);
 		this.rectTransform.localScale = Vector3.one;
 		
@@ -150,6 +152,7 @@ public class DOViewAnimation : IViewAnimation {
 	
 	protected virtual void ShowFromRight(bool triggerOnComplete = true)
 	{
+		
 		this.rectTransform.anchoredPosition3D = new Vector3(POSITION_OFFSET, 0.0f, 0.0f);
 		this.rectTransform.localScale = Vector3.one;
 		
@@ -173,6 +176,7 @@ public class DOViewAnimation : IViewAnimation {
 	
 	protected virtual void ShowFromLeft(bool triggerOnComplete = true)
 	{
+		
 		this.rectTransform.anchoredPosition3D = new Vector3(-POSITION_OFFSET, 0.0f, 0.0f);
 		this.rectTransform.localScale = Vector3.one;
 		
