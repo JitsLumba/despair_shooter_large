@@ -210,7 +210,7 @@ public class ethanai : MonoBehaviour
         }
         else if (col.gameObject.name.Contains("Radius"))
         {
-            
+         
             isondanger = true;
         }
     }

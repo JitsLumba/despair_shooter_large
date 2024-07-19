@@ -6,6 +6,8 @@ public class poolelectric : MonoBehaviour
 {
     [SerializeField] private List<ethanai> ethanailist = new List<ethanai>();
     [SerializeField] private projectilefire projectfire;
+    [SerializeField] private player_collision player_collide;
+    [SerializeField] private gamenotifier gamenotif;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,16 +37,24 @@ public class poolelectric : MonoBehaviour
     }
     public void electrocuteall()
     {
-        for (int i = 0; i < ethanailist.Count; i++)
-        {
-            bool check = ethanailist[i].canbeelec();
-            string poolname = ethanailist[i].poolisonname();
-            if (check && (poolname == this.name))
-            {
-                ethanailist[i].electrocute();
-            }
-
+        bool player_can_elec = player_collide.get_can_elec();
+        if (player_can_elec) {
+            gamenotif.reduceplayerhp();
         }
+        float remaining_player_hp = gamenotif.get_player_hp();
+        if (remaining_player_hp >= 1.0) {
+            for (int i = 0; i < ethanailist.Count; i++)
+            {
+                bool check = ethanailist[i].canbeelec();
+                string poolname = ethanailist[i].poolisonname();
+                if (check && (poolname == this.name))
+                { 
+                    ethanailist[i].electrocute();
+                }
+
+            }
+        }
+        
     }
     public string gamenameret()
     {

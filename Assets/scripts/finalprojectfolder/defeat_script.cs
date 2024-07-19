@@ -10,6 +10,7 @@ public class defeat_script : MonoBehaviour
     [SerializeField] private GameObject raycast_ui;
     [SerializeField] private GameObject camera;
     [SerializeField] private projectilefire proj;
+    [SerializeField] private gunscript gun_script;
     [SerializeField] private spawnpause spawn_pause;
     [SerializeField] private string level_restart_name;
     void Start()
@@ -29,7 +30,8 @@ public class defeat_script : MonoBehaviour
         defeat_ui.SetActive(true);  
         
         spawn_pause.enabled = false;
-            
+        proj.enabled = false;
+        gun_script.enabled = false;
             
         StartCoroutine(waitforit());
         
@@ -45,7 +47,7 @@ public class defeat_script : MonoBehaviour
     IEnumerator waitforit()
     {
         yield return new WaitForSeconds(0.5f);
-        proj.enabled = false;
+        
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         GameObject.Find("FPSController").GetComponent<FirstPersonController>().enabled = false;

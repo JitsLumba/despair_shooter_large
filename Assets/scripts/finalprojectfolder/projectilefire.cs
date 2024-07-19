@@ -48,7 +48,7 @@ public class projectilefire : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Mouse0))
         {
-            fireparticles();
+            //fireparticles();
         }
     }
     public void destroyparticle()
@@ -57,9 +57,13 @@ public class projectilefire : MonoBehaviour
         GameObject.Destroy(vfx1[size]);
         vfx1.RemoveAt(size);
     }
-    void fireparticles()
+    public void fireparticles()
     {
         bool canshooter = true;
+        Debug.Log("CAN SHOOT " + canshoot + "CAN SHOOTER " + canshooter);
+        if (firepoint == null) {
+            Debug.Log("MISSING FIRE POINT");
+        }
         if (elecbullets == 0 && bulletype == "Elec")
         {
             canshooter = false;
@@ -74,6 +78,7 @@ public class projectilefire : MonoBehaviour
             
             canshoot = false;
             StartCoroutine(example());
+            Debug.Log("SPAWNED");
             samp = GameObject.Instantiate(effectspawn, firepoint.transform.position, Quaternion.LookRotation(ray.direction));
             /*if (gscript != null)
             {

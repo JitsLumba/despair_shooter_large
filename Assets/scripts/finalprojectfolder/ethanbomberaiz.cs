@@ -28,6 +28,7 @@ public class ethanbomberaiz : MonoBehaviour
     [SerializeField] private Transform ethanpos;
     [SerializeField] private clearpartovlvlz cplx;
     [SerializeField] private gamenotifier gamenotif;
+    [SerializeField] private player_collision player_collide;
     [SerializeField] private GameObject indic, colliderredii, particleexp;
     [SerializeField] private ParticleSystem explosion;
     [SerializeField] private GameObject ethanobjai;
@@ -53,7 +54,11 @@ public class ethanbomberaiz : MonoBehaviour
         distz = Mathf.Abs(ethanaipos.z - fpspos.z);
         fpsx = fpspos.x;
         fpsz = fpspos.z;
-
+        for (var i = ethanppl.Count - 1; i > -1; i--)
+        {
+            if (ethanppl[i] == null)
+                ethanppl.RemoveAt(i);
+        }
         if ((fpsx >= startx && fpsx <= endx) && (fpsz >= startz && fpsz <= endz) && !(nvmeshagent.enabled))
         {
             move = true;
@@ -138,17 +143,27 @@ public class ethanbomberaiz : MonoBehaviour
         sfx.transform.localPosition = soundloc.transform.localPosition;
         sfx.SetActive(true);
         explosion.Play();
-        for (int i = 0; i < ethanppl.Count; i++)
-        {
-            bool check = ethanppl[i].isondangerval();
-            Debug.Log(i + " - " + check);
-            if (check)
-            {
-                ethanppl[i].instantkill();
-            }
+        //check if player is here
+        bool check_player_on_radius = player_collide.get_is_on_danger();
+        if (check_player_on_radius) {
+            gamenotif.player_instant_dead();
         }
-        gamenotif.reduceenemies();
-        cplx.reduceenemy();
+        float player_remaining_hp = gamenotif.get_player_hp();
+        //if player is not yet dead
+        if (player_remaining_hp >= 1.0) {
+            for (int i = 0; i < ethanppl.Count; i++)
+            {
+                bool check = ethanppl[i].isondangerval();
+                Debug.Log(i + " - " + check);
+                if (check)
+                {
+                    ethanppl[i].instantkill();
+                }
+            }
+       
+            gamenotif.reduceenemies();
+            cplx.reduceenemy();
+        }
         StartCoroutine(explosiondur());
     }
     IEnumerator explosiondur()

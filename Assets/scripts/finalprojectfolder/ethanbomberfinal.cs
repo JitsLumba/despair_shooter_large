@@ -30,6 +30,7 @@ public class ethanbomberfinal : MonoBehaviour
     [SerializeField] private GameObject explsound, soundloc;
     private GameObject sfx;
     [SerializeField] private gamenotifier gamenotif;
+    [SerializeField] private player_collision player_collide;
     [SerializeField] private GameObject indic, colliderredii, particleexp;
     [SerializeField] private ParticleSystem explosion;
     [SerializeField] private GameObject ethanobjai;
@@ -55,6 +56,11 @@ public class ethanbomberfinal : MonoBehaviour
         fpsx = fpspos.x;
         fpsz = fpspos.z;
 
+        for (var i = ethanppl.Count - 1; i > -1; i--)
+        {
+            if (ethanppl[i] == null)
+                ethanppl.RemoveAt(i);
+        }
         if ((fpsx >= startx && fpsx <= endx) && (fpsz >= startz && fpsz <= endz) && !(nvmeshagent.enabled))
         {
             move = true;
@@ -139,16 +145,27 @@ public class ethanbomberfinal : MonoBehaviour
         sfx.transform.localPosition = soundloc.transform.localPosition;
         sfx.SetActive(true);
         explosion.Play();
-        for (int i = 0; i < ethanppl.Count; i++)
-        {
-            bool check = ethanppl[i].isondangerval();
-            Debug.Log(i + " - " + check);
-            if (check)
-            {
-                ethanppl[i].instantkill();
-            }
+        //check if player is here
+        bool check_player_on_radius = player_collide.get_is_on_danger();
+        if (check_player_on_radius) {
+            gamenotif.player_instant_dead();
         }
-        gamenotif.reduceenemies();
+        float player_remaining_hp = gamenotif.get_player_hp();
+        //if player is not yet dead
+        if (player_remaining_hp >= 1.0) {
+            for (int i = 0; i < ethanppl.Count; i++)
+            {
+                bool check = ethanppl[i].isondangerval();
+                Debug.Log(i + " - " + check);
+                if (check)
+                {
+                    ethanppl[i].instantkill();
+                }
+            }
+       
+            gamenotif.reduceenemies();
+            
+        }
         StartCoroutine(explosiondur());
     }
     IEnumerator explosiondur()

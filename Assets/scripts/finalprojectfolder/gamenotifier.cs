@@ -38,6 +38,9 @@ public class gamenotifier : MonoBehaviour
         }*/
         
     }
+    public float get_player_hp() {
+        return hp;
+    }
     public void canshowendscreen()
     {
         canshow = true;
@@ -86,6 +89,7 @@ public class gamenotifier : MonoBehaviour
         enemiesleft = enemiesleft - 1;
         enemiesleftword = "" + enemiesleft + " left";
         enemiesdestroyed = enemiesdestroyed + 1;
+        Debug.Log("ENEMIES LEFT " + enemiesleft);
         if (enemiesleft == 0)
         {
             if (level == "lvl1")
@@ -94,11 +98,11 @@ public class gamenotifier : MonoBehaviour
             }
             else if (level == "lvl2")
             {
-                won2 = true;
+                won1 = true;
             }
             else if (level == "lvl3")
             {
-                won3 = true;
+                won1 = true;
             }
         }
         updatetest();
@@ -110,22 +114,16 @@ public class gamenotifier : MonoBehaviour
         hpratio = hp / maxhp;
         if ((hp == 0 && enemiesleft == 0) || hp == 0)
         {
-            if (level == "lvl1")
-            {
-                lost1 = true;
-            }
-            else if (level == "lvl2")
-            {
-                lost2 = true;
-            }
-            else if (level == "lvl3")
-            {
-                lost3 = true;
-            }
+            lost1 = true;
         }
-        {
-            
-        }
+        
+        updatetest();
+    }
+    public void player_instant_dead() {
+        hp = 0;
+        hpratio = hp / maxhp;
+        lost1 = true;
+        
         updatetest();
     }
     public void quit_game() {
@@ -138,6 +136,7 @@ public class gamenotifier : MonoBehaviour
     }
     public void main_menu() {
         wants_to_main_menu = true;
+        
         updatetest();
     }
     void updatetest()

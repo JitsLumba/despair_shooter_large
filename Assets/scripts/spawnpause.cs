@@ -8,6 +8,7 @@ public class spawnpause : MonoBehaviour
     [SerializeField] private GameObject raycastui;
     [SerializeField] private GameObject pause_screen;
     private bool notpaused = true;
+    [SerializeField] private gunscript gun_script;
     [SerializeField] private projectilefire proj;
     // Start is called before the first frame update
     void Start()
@@ -32,7 +33,7 @@ public class spawnpause : MonoBehaviour
                 notpaused = false;
                 pause_screen.SetActive(true);
                 //ViewHandler.Instance.Show(ViewNames.pause_screen);
-            
+                gun_script.enabled = false;
                 proj.enabled = false;
                 StartCoroutine(waitforit());
                 
@@ -61,7 +62,7 @@ public class spawnpause : MonoBehaviour
             notpaused = true;
             pause_screen.SetActive(false);
             proj.enabled = true;
-            
+            gun_script.enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             
     }

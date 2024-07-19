@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class victoryuiobserver1 : MonoBehaviour
 {
-    [SerializeField] private victoryviewhandler viw;
+    //THIS ONE IS FOR VPNALEL1 PREFAB
+    //[SerializeField] private victoryviewhandler viw;
     [SerializeField] private GameObject raycastui;
     [SerializeField] private defeat_script defeat_scripter;
     [SerializeField] private int level_call_num;
@@ -36,9 +37,11 @@ public class victoryuiobserver1 : MonoBehaviour
         bool quit_confirm  = param.GetBoolExtra("wants_to_quit", false);
         
         if (main_menu_confirm) {
+            Time.timeScale = 1.0f;
             nextlevelmanager.Instance.main_menu_return();
         }
         else if (quit_confirm) {
+            Time.timeScale = 1.0f;
             nextlevelmanager.Instance.close_game();
         }
         else {

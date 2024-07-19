@@ -20,6 +20,7 @@ public class gunscript : MonoBehaviour
     [SerializeField] private GameObject soundloc;
     [SerializeField] private List<GameObject> soundeffectlist;
     [SerializeField] private bool elecbuletenabled, knockbackenabled;
+    [SerializeField] private projectilefire proj_fire;
     private Quaternion rotation;
     private Vector3 direction;
     private Quaternion rotater;
@@ -96,7 +97,7 @@ public class gunscript : MonoBehaviour
         soundrep.transform.localPosition = soundloc.transform.localPosition;
         soundrep.SetActive(true);
         gamenotif.changebullet(bullet, rcolor, gcolor, bcolor, acolor, elecbullets);
-
+        
         StartCoroutine(cansoundchooseagain());
     }
     void shoot()
@@ -122,6 +123,7 @@ public class gunscript : MonoBehaviour
                 soundrep.transform.localPosition = soundloc.transform.localPosition;
                 soundrep.SetActive(true);
                 soundeffectlist.Add(soundrep);
+                proj_fire.fireparticles();
                 StartCoroutine(cansoundagain());
             }
             

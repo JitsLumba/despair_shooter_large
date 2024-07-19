@@ -112,7 +112,7 @@ public class ethanaiz : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         candmg = false;
-        Debug.Log("Hello no more");
+        
         StartCoroutine(breatheratt());
     }
     IEnumerator breatheratt()
