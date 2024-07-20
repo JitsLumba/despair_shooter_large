@@ -5978,7 +5978,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 186
   endx: 222
   startz: -695
@@ -7023,7 +7023,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 186
   endx: 222
   startz: -695
@@ -13085,7 +13085,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 186
   endx: 222
   startz: -695
@@ -14929,7 +14929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 1
+  hp: 3
   posdoor: z
   startx: 225
   endx: 240
@@ -20953,7 +20953,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 186
   endx: 222
   startz: -695
@@ -30683,7 +30683,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 186
   endx: 222
   startz: -695
@@ -37505,7 +37505,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: -136}
+  m_AnchoredPosition: {x: -6, y: -196}
   m_SizeDelta: {x: -368, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &604841320
@@ -38552,7 +38552,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 186
   endx: 222
   startz: -695
@@ -39615,7 +39615,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 186
   endx: 222
   startz: -695
@@ -45802,7 +45802,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 186
   endx: 222
   startz: -695
@@ -46212,7 +46212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 1
+  hp: 3
   posdoor: z
   startx: 225
   endx: 240
@@ -55709,7 +55709,7 @@ MonoBehaviour:
   navermeshspeed: 7
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 284
   endx: 330
   startz: -653
@@ -55854,7 +55854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 1
+  hp: 3
   posdoor: z
   startx: 225
   endx: 240
@@ -57584,7 +57584,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 186
   endx: 222
   startz: -695
@@ -59582,7 +59582,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 186
   endx: 222
   startz: -695
@@ -63405,7 +63405,7 @@ MonoBehaviour:
   navermeshspeed: 7
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 284
   endx: 330
   startz: -653
@@ -68967,7 +68967,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: -62}
+  m_AnchoredPosition: {x: -6, y: -45}
   m_SizeDelta: {x: -368, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1268231825
@@ -69398,7 +69398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 1
+  hp: 3
   posdoor: z
   startx: 225
   endx: 240
@@ -70175,7 +70175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 1
+  hp: 3
   posdoor: z
   startx: 225
   endx: 240
@@ -71976,7 +71976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 1
+  hp: 3
   posdoor: z
   startx: 225
   endx: 240
@@ -72831,7 +72831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 1
+  hp: 3
   posdoor: z
   startx: 225
   endx: 240
@@ -73530,7 +73530,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 186
   endx: 222
   startz: -695
@@ -73728,7 +73728,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 186
   endx: 222
   startz: -695
@@ -82125,7 +82125,7 @@ MonoBehaviour:
   navermeshspeed: 7
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 284
   endx: 330
   startz: -653
@@ -82486,7 +82486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 1
+  hp: 3
   posdoor: z
   startx: 225
   endx: 240
@@ -86609,7 +86609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 1
+  hp: 3
   posdoor: z
   startx: 225
   endx: 240
@@ -91091,7 +91091,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 186
   endx: 222
   startz: -695
@@ -100805,7 +100805,7 @@ MonoBehaviour:
   navermeshspeed: 7
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 284
   endx: 330
   startz: -653
@@ -101946,7 +101946,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: 87}
+  m_AnchoredPosition: {x: -6, y: 106}
   m_SizeDelta: {x: -368, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1951755958
@@ -102559,7 +102559,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 186
   endx: 222
   startz: -695
@@ -106830,7 +106830,7 @@ MonoBehaviour:
   gamenotif: {fileID: 57983236}
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 186
   endx: 222
   startz: -695
@@ -110334,7 +110334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navmeshspeed: 7
   fpshealther: {fileID: 938331642}
-  hp: 1
+  hp: 3
   posdoor: z
   startx: 225
   endx: 240
@@ -113833,7 +113833,7 @@ MonoBehaviour:
   navermeshspeed: 7
   fpshealther: {fileID: 938331642}
   ethantype: normal
-  hp: 1
+  hp: 3
   startx: 284
   endx: 330
   startz: -653

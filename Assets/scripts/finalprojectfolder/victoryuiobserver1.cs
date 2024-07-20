@@ -60,7 +60,7 @@ public class victoryuiobserver1 : MonoBehaviour
                     nextlevelmanager.Instance.loadlevel(level_call_num);
                     Debug.Log("Missy");
                     //viw.writeon(enemy, grade);
-                    ViewHandler.Instance.Show(ViewNames.victory_ui1);
+                    
 
                     Cursor.visible = true;
                     Cursor.lockState = CursorLockMode.None;

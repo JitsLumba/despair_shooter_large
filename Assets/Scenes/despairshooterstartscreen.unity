@@ -6712,7 +6712,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "W - Move forward  A - Move left  S - Move Back  D - Move Right\nLeft Shift
     - Dash\n1 - Change bullet to Break\n2 - Change bullet to Elec(Level 2 onwards)\n3
-    - Change bullet to Blow(Level 3 onwards) \nLeft Click - Shoot"
+    - Change bullet to Blow(Level 3 onwards) \nLeft Click - Shoot\nESC - Pause game"
 --- !u!222 &1533563571
 CanvasRenderer:
   m_ObjectHideFlags: 0
