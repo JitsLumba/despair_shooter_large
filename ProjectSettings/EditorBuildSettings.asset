@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/despairshooterstartscreen.unity
     guid: dec51bfb257a9524ea8d9ac61a64bd5e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/animationpractice.unity
     guid: 603a410ddbc500143bd8d396001b8680
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/despairshooterlvl2.unity
     guid: ec42a39fd92cd354fb99caed6ad409f3
   - enabled: 1
