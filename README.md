@@ -7,4 +7,4 @@ Despair Shooter is a 3D Unity shooter game that is inspired by Danganronpa Ultra
 ![level 3](https://github.com/JitsLumba/despair_shooter_unity/blob/main/level_3_screenshot.png)
 # Gameplay Trailer
 Click on the Image to View Gameplay Video:
-[![Despair Shooter Trailer](https://github.com/JitsLumba/despair_shooter_unity/blob/main/despair_shooter_trailer_img.png)](https://www.youtube.com/watch?v=c2aUAL_Uaio)
+[![Despair Shooter Trailer](https://github.com/JitsLumba/despair_shooter_unity/blob/main/despair_shooter_trailer_img.png)](https://www.youtube.com/watch?v=P9R1dmwQxgk)
